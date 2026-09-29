@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Fu Panda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4e4c1;
+            color: #2b2118;
+        }
+
+        header {
+            background: linear-gradient(135deg, #151515, #3b2a1e);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 6px solid #d99b25;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #f5c542;
+            text-shadow: 3px 3px #000;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #eee;
+        }
+
+        nav {
+            background-color: #b52b24;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd45c;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                linear-gradient(135deg, #8b2f24, #d39a37);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #000;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #9e2b25;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .sobre {
+            background-color: #fff8e8;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .personagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+            border-top: 5px solid #d99b25;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .emoji {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #a72e26;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        .curiosidades {
+            background-color: #3a2920;
+            color: white;
+            border-radius: 15px;
+            padding: 35px;
+        }
+
+        .curiosidades ul {
+            padding-left: 25px;
+            line-height: 2;
+        }
+
+        .mensagem {
+            text-align: center;
+            background-color: #d99b25;
+            color: #2b2118;
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .mensagem h2 {
+            color: #2b2118;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #171717;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐼 Kung Fu Panda</h1>
+        <p>Uma aventura de coragem, amizade e superação</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>O lendário Dragão Guerreiro</h2>
+            <p>
+                Conheça Po, um panda apaixonado por kung fu que descobre
+                que pode se tornar um grande guerreiro, mesmo quando ninguém
+                acredita nele.
+            </p>
+        </div>
+    </div>
+
+    <section id="sobre">
+        <h2>Sobre o desenho</h2>
+
+        <div class="sobre">
+            <p>
+                <strong>Kung Fu Panda</strong> é uma animação que acompanha
+                Po, um panda divertido e sonhador que vive em uma pequena
+                vila e admira os grandes mestres do kung fu.
+            </p>
+
+            <br>
+
+            <p>
+                A história começa a mudar quando Po é escolhido para se
+                tornar o lendário <strong>Dragão Guerreiro</strong>. Ele
+                passa então a treinar com grandes mestres e aprende que
+                acreditar em si mesmo é uma das partes mais importantes
+                para alcançar seus objetivos.
+            </p>
+        </div>
+    </section>
+
+    <section id="personagens">
+        <h2>Personagens principais</h2>
+
+        <div class="personagens">
+
+            <div class="card">
+                <div class="emoji">🐼</div>
+                <h3>Po</h3>
+                <p>
+                    Um panda divertido, determinado e apaixonado por kung fu.
+                    Ele é o protagonista da história.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🐯</div>
+                <h3>Tigresa</h3>
+                <p>
+                    Uma guerreira habilidosa e integrante dos Cinco Furiosos.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🐢</div>
+                <h3>Mestre Oogway</h3>
+                <p>
+                    Um sábio mestre que possui grande conhecimento sobre
+                    kung fu e sobre a vida.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🐼</div>
+                <h3>Mestre Shifu</h3>
+                <p>
+                    Um mestre exigente que treina Po e os Cinco Furiosos.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🐵</div>
+                <h3>Macaco</h3>
+                <p>
+                    Um dos Cinco Furiosos, conhecido por sua agilidade e
+                    habilidade nas artes marciais.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="curiosidades">
+        <h2>Curiosidades</h2>
+
+        <div class="curiosidades">
+            <ul>
+                <li>Po é um panda que sonha em aprender kung fu.</li>
+                <li>A história mistura comédia, ação e ensinamentos sobre a vida.</li>
+                <li>Os Cinco Furiosos são importantes aliados de Po.</li>
+                <li>A franquia apresenta diversos mestres e estilos de luta.</li>
+                <li>Uma das principais mensagens da história é acreditar em si mesmo.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="mensagem">
+            <h2>🥋 Acredite em você!</h2>
+            <p>
+                Assim como Po, todos podem descobrir seus próprios talentos
+                quando têm coragem para aprender, persistir e acreditar em si mesmos.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>🐼 Página temática sobre Kung Fu Panda</p>
+        <p>Feita com HTML e CSS interno.</p>
+    </footer>
+
+</body>
+</html>
